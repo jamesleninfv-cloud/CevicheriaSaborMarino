@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Sabor Marino | Cevichería</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f8f9;
+            color: #173042;
+        }
+
+        /* MENÚ SUPERIOR */
+        header {
+            background: #073b4c;
+            color: white;
+            padding: 18px 6%;
+        }
+
+        .navbar {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        /* PORTADA */
+        .hero {
+            padding: 65px 6%;
+            background: linear-gradient(110deg, #d9f3ef, #fff3d9);
+        }
+
+        .hero-contenido {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .hero h1 {
+            max-width: 550px;
+            margin: 0 0 18px;
+            color: #073b4c;
+            font-size: 48px;
+            line-height: 1.15;
+        }
+
+        .hero p {
+            max-width: 560px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 12px 20px;
+            background: #e76f51;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background: #d85d40;
+        }
+
+        /* ESPECIALIDADES */
+        .especialidades {
+            max-width: 1100px;
+            margin: auto;
+            padding: 42px 20px;
+        }
+
+        .titulo-seccion {
+            text-align: center;
+            margin-bottom: 26px;
+        }
+
+        .titulo-seccion h2 {
+            color: #173042;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .titulo-seccion p {
+            color: #536873;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .tarjeta {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px #17304212;
+        }
+
+        .tarjeta .icono {
+            font-size: 30px;
+        }
+
+        .tarjeta h3 {
+            color: #087e8b;
+            margin-bottom: 10px;
+        }
+
+        .tarjeta p {
+            color: #536873;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* GESTIÓN */
+        .gestion {
+            max-width: 1100px;
+            margin: auto;
+            padding: 35px 20px 55px;
+            text-align: center;
+        }
+
+        .gestion h2 {
+            color: #073b4c;
+        }
+
+        footer {
+            background: #073b4c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* DISEÑO PARA CELULARES */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENÚ SUPERIOR -->
+    <header>
+        <div class="navbar">
+
+            <a href="index.html" class="logo">
+                🐟 El Sabor Marino
+            </a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="#especialidades">Especialidades</a>
+                <a href="productos">Productos</a>
+                <a href="#gestion">Gestión</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- PORTADA -->
+    <section class="hero">
+
+        <div class="hero-contenido">
+
+            <h1>El auténtico sabor del mar</h1>
+
+            <p>
+                Bienvenido a El Sabor Marino. Descubre nuestra propuesta
+                gastronómica y disfruta de una experiencia llena de sabor,
+                frescura y tradición.
+            </p>
+
+            <a href="#especialidades" class="boton">
+                Descubrir especialidades
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ESPECIALIDADES -->
+    <section class="especialidades" id="especialidades">
+
+        <div class="titulo-seccion">
+
+            <h2>Nuestras especialidades</h2>
+
+            <p>
+                Una propuesta inspirada en los sabores del mar peruano.
+            </p>
+
+        </div>
+
+        <div class="tarjetas">
+
+            <article class="tarjeta">
+                <div class="icono">🍋</div>
+                <h3>Ceviches</h3>
+                <p>
+                    Pescado, limón y el equilibrio de sabores
+                    de nuestra cocina.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <div class="icono">🦐</div>
+                <h3>Arroces marinos</h3>
+                <p>
+                    Opciones marinas preparadas para disfrutar
+                    y compartir.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <div class="icono">🐟</div>
+                <h3>Pescados</h3>
+                <p>
+                    Preparaciones con inspiración en la
+                    gastronomía peruana.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- GESTIÓN -->
+    <section class="gestion" id="gestion">
+
+        <h2>Sistema de gestión operativa</h2>
+
+        <p>
+            Consulta nuestros productos y conoce nuestra propuesta gastronómica.
+        </p>
+
+        <a href="productos" class="boton">
+            Ver productos
+        </a>
+
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 El Sabor Marino - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
